@@ -179,13 +179,14 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="qia-em-k7x">
-                                <rect key="frame" x="16" y="244" width="343" height="179"/>
+                                <rect key="frame" x="16" y="281.5" width="343" height="104"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TQB-fk-tOw">
                                         <rect key="frame" x="-2" y="0.0" width="347" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="151" translatesAutoresizingMaskIntoConstraints="NO" id="okT-cn-UnW">
-                                        <rect key="frame" x="2" y="75" width="339" height="24"/>
+                                        <rect key="frame" x="2" y="0.0" width="339" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Ненавижу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbg-am-fnk">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="24"/>
@@ -205,7 +206,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bId-SX-AfP">
-                                        <rect key="frame" x="130.5" y="144" width="82" height="35"/>
+                                        <rect key="frame" x="130.5" y="69" width="82" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
@@ -216,6 +217,11 @@
                                 <constraints>
                                     <constraint firstItem="okT-cn-UnW" firstAttribute="centerX" secondItem="qia-em-k7x" secondAttribute="centerX" id="wbK-Ze-ckT"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="TQB-fk-tOw"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R6G-xk-Li9">
                                 <rect key="frame" x="0.0" y="96" width="375" height="4"/>
@@ -234,6 +240,7 @@
                             <constraint firstItem="R6G-xk-Li9" firstAttribute="top" secondItem="BfZ-1s-4RD" secondAttribute="top" id="89v-RO-cQM"/>
                             <constraint firstItem="qia-em-k7x" firstAttribute="centerY" secondItem="mxo-n9-eka" secondAttribute="centerY" id="Eox-uk-yfY"/>
                             <constraint firstItem="BfZ-1s-4RD" firstAttribute="trailing" secondItem="R6G-xk-Li9" secondAttribute="trailing" id="Hh5-cd-Njj"/>
+                            <constraint firstItem="XDL-6d-fqi" firstAttribute="top" secondItem="yLj-oO-tPQ" secondAttribute="bottom" constant="72.5" id="MqZ-Py-h5V"/>
                             <constraint firstItem="BfZ-1s-4RD" firstAttribute="trailing" secondItem="qia-em-k7x" secondAttribute="trailing" constant="16" id="T5m-x6-ria"/>
                             <constraint firstItem="yLj-oO-tPQ" firstAttribute="leading" secondItem="BfZ-1s-4RD" secondAttribute="leading" constant="16" id="VNy-z7-4ee"/>
                             <constraint firstItem="86Q-19-NmN" firstAttribute="leading" secondItem="BfZ-1s-4RD" secondAttribute="leading" constant="16" id="X7M-JU-y9B"/>
@@ -252,6 +259,22 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="TTj-Vz-ipd"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="86Q-19-NmN" id="69j-op-Qsz"/>
+                        <outlet property="progressView" destination="R6G-xk-Li9" id="bNu-Js-NLb"/>
+                        <outlet property="quastionLabel" destination="0eO-lZ-xZG" id="vCR-cu-pXq"/>
+                        <outlet property="rangedSlider" destination="TQB-fk-tOw" id="5hA-67-RHv"/>
+                        <outlet property="rangedStackView" destination="qia-em-k7x" id="xIX-UF-3Tg"/>
+                        <outlet property="singleStackView" destination="yLj-oO-tPQ" id="REG-o2-SMF"/>
+                        <outletCollection property="singleButtons" destination="SIe-I5-vv1" collectionClass="NSMutableArray" id="gwY-eo-G51"/>
+                        <outletCollection property="singleButtons" destination="F14-kS-iVh" collectionClass="NSMutableArray" id="SJX-PO-v5G"/>
+                        <outletCollection property="singleButtons" destination="BDM-fH-eDw" collectionClass="NSMutableArray" id="oEA-gj-h2I"/>
+                        <outletCollection property="singleButtons" destination="bF2-Co-xgk" collectionClass="NSMutableArray" id="5fJ-J5-bTd"/>
+                        <outletCollection property="multipleLabels" destination="Hbk-IE-wLD" collectionClass="NSMutableArray" id="pNR-Yc-jPN"/>
+                        <outletCollection property="multipleLabels" destination="ba3-VK-Ndj" collectionClass="NSMutableArray" id="RWm-Sj-WiQ"/>
+                        <outletCollection property="multipleLabels" destination="kdI-S2-E0a" collectionClass="NSMutableArray" id="fUR-JV-q09"/>
+                        <outletCollection property="multipleLabels" destination="yVd-CR-2oT" collectionClass="NSMutableArray" id="V0E-R4-r6c"/>
+                        <outletCollection property="rangedLabels" destination="rbg-am-fnk" collectionClass="NSMutableArray" id="guv-b2-7bB"/>
+                        <outletCollection property="rangedLabels" destination="gXX-0d-hKg" collectionClass="NSMutableArray" id="obW-vE-LJo"/>
                         <segue destination="LCJ-Zt-t3Q" kind="show" identifier="showResult" id="sAV-fM-R83"/>
                     </connections>
                 </viewController>

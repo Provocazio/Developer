@@ -27,8 +27,6 @@ enum AnimalType: String{
             return "Кролик"
         case .turtle:
             return "Черепаха"
-        default:
-            <#code#>
         }
     }
 }

@@ -15,7 +15,7 @@
 		1129C66D292B4042003206D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1129C66B292B4042003206D2 /* LaunchScreen.storyboard */; };
 		1129C67B292B5E7D003206D2 /* QuastionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129C67A292B5E7D003206D2 /* QuastionViewController.swift */; };
 		1129C67D292B6365003206D2 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129C67C292B6365003206D2 /* FinalViewController.swift */; };
-		1129C67F292C9578003206D2 /* Quastion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129C67E292C9578003206D2 /* Quastion.swift */; };
+		1129C67F292C9578003206D2 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129C67E292C9578003206D2 /* Question.swift */; };
 		1129C681292C95A8003206D2 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129C680292C95A8003206D2 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +30,7 @@
 		1129C66E292B4042003206D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1129C67A292B5E7D003206D2 /* QuastionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuastionViewController.swift; sourceTree = "<group>"; };
 		1129C67C292B6365003206D2 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
-		1129C67E292C9578003206D2 /* Quastion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quastion.swift; sourceTree = "<group>"; };
+		1129C67E292C9578003206D2 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		1129C680292C95A8003206D2 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +105,7 @@
 		1129C678292B43AF003206D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1129C67E292C9578003206D2 /* Quastion.swift */,
+				1129C67E292C9578003206D2 /* Question.swift */,
 				1129C680292C95A8003206D2 /* Answer.swift */,
 			);
 			path = Models;
@@ -190,7 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1129C67D292B6365003206D2 /* FinalViewController.swift in Sources */,
-				1129C67F292C9578003206D2 /* Quastion.swift in Sources */,
+				1129C67F292C9578003206D2 /* Question.swift in Sources */,
 				1129C665292B4040003206D2 /* ViewController.swift in Sources */,
 				1129C681292C95A8003206D2 /* Answer.swift in Sources */,
 				1129C661292B4040003206D2 /* AppDelegate.swift in Sources */,
