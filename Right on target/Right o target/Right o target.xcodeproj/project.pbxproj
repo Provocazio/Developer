@@ -14,6 +14,8 @@
 		1123D5D52939B58A000D5433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1123D5D42939B58A000D5433 /* Assets.xcassets */; };
 		1123D5D82939B58A000D5433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1123D5D62939B58A000D5433 /* LaunchScreen.storyboard */; };
 		118F326529420ADF00438C01 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F326429420ADF00438C01 /* Game.swift */; };
+		118F32872943416500438C01 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F32862943416500438C01 /* Generator.swift */; };
+		118F32892943417800438C01 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F32882943417800438C01 /* Round.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1123D5D72939B58A000D5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1123D5D92939B58A000D5433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118F326429420ADF00438C01 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		118F32862943416500438C01 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		118F32882943417800438C01 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				118F3263294209A900438C01 /* Model */,
+				1123D5CF2939B585000D5433 /* ViewController.swift */,
 				1123D5CB2939B585000D5433 /* AppDelegate.swift */,
 				1123D5CD2939B585000D5433 /* SceneDelegate.swift */,
-				1123D5CF2939B585000D5433 /* ViewController.swift */,
 				1123D5D12939B585000D5433 /* Main.storyboard */,
 				1123D5D42939B58A000D5433 /* Assets.xcassets */,
 				1123D5D62939B58A000D5433 /* LaunchScreen.storyboard */,
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				118F326429420ADF00438C01 /* Game.swift */,
+				118F32862943416500438C01 /* Generator.swift */,
+				118F32882943417800438C01 /* Round.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				1123D5D02939B585000D5433 /* ViewController.swift in Sources */,
 				1123D5CC2939B585000D5433 /* AppDelegate.swift in Sources */,
 				1123D5CE2939B585000D5433 /* SceneDelegate.swift in Sources */,
+				118F32892943417800438C01 /* Round.swift in Sources */,
+				118F32872943416500438C01 /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

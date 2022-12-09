@@ -10,28 +10,30 @@ import UIKit
 class ViewController: UIViewController {
 
     var game: Game!
+    var generator: Generate!
     
     @IBOutlet var slider: UISlider!
     @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        game = Game(startValue: 1, endValue: 50, rounds: 5)
-        updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
+        generator = Generate(minValue: 1, maxValue: 50)
+        game = Game(valueGenerator: generator, rounds: 5)
+        updateLabelWithSecretNumber(newText: String(generator.randomNum()))
     }
     
     @IBAction func checkNumber() {
-        game.calculateStore(with: Int(slider.value))
+        game.currentRound.calculateScore(with: Int(slider.value))
         if game.isGameEnded {
             showAlertWith(score: game.score)
             game.restartGame()
         } else {
             game.startNewRound()
         }
-        updateLabelWithSecretNumber(newText: String(game.currentSecretValue))
+        updateLabelWithSecretNumber(newText: String(game.currentRound.currentSecretValue))
     }
     
-    private func updateLabelWithSecretNumber(newText: String) {
+    func updateLabelWithSecretNumber(newText: String) {
         label.text = newText
     }
     
